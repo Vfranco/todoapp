@@ -1,0 +1,27 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Todo App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vfranco/todoapp.git"
+  },
+  "keywords": [
+    "Todo",
+    "App",
+    "Tasks"
+  ],
+  "author": "vfrancov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vfranco/todoapp/issues"
+  },
+  "homepage": "https://github.com/Vfranco/todoapp#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
