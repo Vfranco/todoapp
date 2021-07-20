@@ -8,14 +8,18 @@ var tareas = new Array();
 
 function agregar() {
 
-    var entrada = document.getElementById('inputTareas');
-    
-    tareas.push(entrada.value);
+    var input = document.getElementById("inputTareas");
 
-    entrada.value = " ";
+    if (input.value.trim().length > 0) {
 
-    console.log(tareas);
-    
+        tareas.push(input.value);
+
+        input.value = " ";
+
+        console.log(tareas);
+    }
+
+
 }
 
 
