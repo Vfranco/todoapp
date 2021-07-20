@@ -1,3 +1,6 @@
+function limpiar(){
+    document.getElementsByClassName("input-form")[0].value = " ";
+}
 
 
 var tareas = new Array();
