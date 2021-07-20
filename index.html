@@ -19,14 +19,14 @@
             <form action="javascript:">
                 <div class="input">
                     <label>My task</label>
-                    <input type="text" class="input-form">
+                    <input type="text" id="inputTareas" class="input-form">
                 </div>
-                <button type="submit" class="boton">Guardar</button>
+                <button type="submit"  onClick="agregar();" class="boton">Guardar</button>
             </form>
         </div>
         <ul>
             <li>FC. Barcelona   
-                <button class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
+                <button  class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
             </li>
             <li>Real Madrid
                 <button class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
@@ -39,10 +39,10 @@
             </li>
         </ul>
 
-       
-
+    
     </div>
   
+    <script src="./src/app/app.js"></script>
 </body>
 
 </html>
