@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/assets/app.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/assets/app.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>My Todo App</h1>
-        <div class="form__container">
-            <form action="javascript:">
-                <div class="input">
-                    <label>My task</label>
-                    <input type="text" class="input-form">
-                </div>
-                <button type="submit" class="boton">Guardar</button>
-            </form>
-        </div>
-        <ul>
-            <li>FC. Barcelona</li>
-            <li>Real Madrid</li>
-            <li>Real Betis</li>
-            <li>Atlético de Madrid</li>
-        </ul>
-
+      <h1>My Todo App</h1>
+      <div class="form__container">
+        <form action="javascript:">
+          <div class="input">
+            <label>My task</label>
+            <input type="text" class="input-form" />
+          </div>
+          <button type="submit" class="boton">Guardar</button>
+        </form>
+      </div>
+      <ul>
+        <li>FC. Barcelona</li>
+        <li>Real Madrid</li>
+        <li>Real Betis</li>
+        <li>Atlético de Madrid</li>
+      </ul>
     </div>
-  
-</body>
 
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    <script src="./src/app/app.js"></script>
+  </body>
 </html>

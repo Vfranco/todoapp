@@ -1,43 +1,54 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 .container {
-    width: 800px;
-    margin: 50px auto;
+  width: 800px;
+  margin: 50px auto;
 }
 
 .container h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .input label {
-    font-size: 1rem;
-    margin-bottom: 6px;
-    font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
 
 .input-form {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
 }
 
-.boton{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-    float: right;
-    margin-top: 10px;
+.boton {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+  float: right;
+  margin-top: 10px;
+}
+
+#myProgress {
+  width: 50%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: green;
 }
