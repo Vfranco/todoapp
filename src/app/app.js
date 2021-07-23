@@ -3,7 +3,7 @@ function limpiar(){
 }
 
 
-var tareas = new Array();
+let tareas = new Array();
 
 
 function agregar() {
@@ -14,7 +14,7 @@ function agregar() {
 
         tareas.push(input.value);
 
-        input.value = " ";
+        input.value = "";
 
         console.log(tareas);
     }
@@ -22,6 +22,13 @@ function agregar() {
 
 }
 
+function borrar(){
+    
+    var dato= document.getElementById("inputTareas");
+    var index= tareas.indexOf(dato.value);
+    tareas.splice(index,1);
+    console.log(tareas);     
+}
 
 
 
