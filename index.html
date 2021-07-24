@@ -9,41 +9,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./src/assets/app.css">
 </head>
-
 <body>
     <div class="container">
         <h1>My Todo App</h1>
         <div class="form__container">
-            <form action="javascript:agregar()">
+            <form action="javascript:">
                 <div class="input">
                     <label>My task</label>
-                    <input type="text" id="inputTareas"  placeholder="Ingrese la tarea" class="input-form"  required>
+                    <input type="text" class="input-form" required>
                 </div>
-                <button onclick="limpiar()" type="button" class="btn-cancelar" >Cancelar</button>
-                <button type="submit"  onClick="agregar();" class="boton">Guardar</button>
-                <button  onclick="borrar()" type="button" class="boton">Eliminar</button>
+                <div class="input">
+                    <button class="btn btn-success">Guardar Tarea</button>
+                </div>
             </form>
         </div>
-        <ul>
-            <li>FC. Barcelona   
-                <button  class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
-            </li>
-            <li>Real Madrid
-                <button class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
-            </li>
-            <li>Real Betis
-                <button class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
-            </li>
-            <li>Atlético de Madrid
-                <button class="button azul">Editar</button> <button class="button rojo">Eliminar</button> 
-            </li>
-        </ul>
-      <label for="progreso">Barra de Progreso</label>
-        <progress id="progreso" max="10" value="4"></progress>
+        <h1>My Tasks</h1>
+        <div class="list__container">
+            <div class="list__container__ul">
+                <div id="resume_tasks" class="list__container__li">
+                    <!-- <div class="list__container__task">
+                        <span>Mi Tarea!</span>
+                        <div class="list__container__call-actions">
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="list__container__task">
+                        <span>Mi Tarea!</span>
+                        <div class="list__container__call-actions">
+                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-trash"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     </div>
-  
+    <script src="./src/app/form.js"></script>
     <script src="./src/app/app.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
 
@@ -15,6 +15,7 @@ body {
 .input {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .input label {
@@ -29,53 +30,40 @@ body {
     padding: 8px;
 }
 
-.boton{
-    text-decoration: none;
+.btn {
     padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-    float: right;
-    margin-top: 10px;
-}
-
-.btn-cancelar{
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 5px;
-    color: #ffffff;
-    background: #e70a0a;
-    border-radius: 6px;
-    border: 2px solid #ff0000;
-    font-weight: 600;
-    float: right;
-}
-
-.button {
-    border: none;
+    font-size: 15px;
     border-radius: 4px;
-    color: white;
-    padding: 3px 3px;
-    text-align: center;
-    /* display: inline- */
-    font-size: 12px;
-   
+    cursor: pointer;
 }
 
-.azul {
-    background-color: #3818c4;
+.btn-success {
+    border: 1px solid #537c53;
+    background-color: #4ba94b;
+    color: #fff;
 }
 
-.rojo {
-    background-color: #cc1e1e;
+.list__container {
+    margin-top: 30px;
 }
 
-label {
-    padding-right: 10px;
-    font-size: 1rem;
+.list__container__task span {
+    font-weight: bold;
+}
+
+.list__container__task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.list__container__call-actions i {
+    cursor: pointer;
+}
+
+.list__container__call-actions i:first-child {
+    margin-right: 10px;
 }
