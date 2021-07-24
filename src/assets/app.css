@@ -74,3 +74,8 @@ body {
 .rojo {
     background-color: #cc1e1e;
 }
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+}
