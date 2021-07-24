@@ -20,10 +20,10 @@
             <form action="javascript:">
                 <div class="input">
                     <label>My task</label>
-                    <input type="text" class="input-form" required>
+                    <input id="task" type="text" class="input-form" required>
                 </div>
                 <div class="input">
-                    <button class="btn btn-success">Guardar Tarea</button>
+                    <button id="btn-create" class="btn btn-success">Guardar Tarea</button>
                 </div>
             </form>
         </div>
@@ -31,24 +31,12 @@
         <div class="list__container">
             <div class="list__container__ul">
                 <div id="resume_tasks" class="list__container__li">
-                    <!-- <div class="list__container__task">
-                        <span>Mi Tarea!</span>
-                        <div class="list__container__call-actions">
-                            <i class="fa fa-edit"></i>
-                            <i class="fa fa-trash"></i>
-                        </div>
-                    </div>
-                    <div class="list__container__task">
-                        <span>Mi Tarea!</span>
-                        <div class="list__container__call-actions">
-                            <i class="fa fa-edit"></i>
-                            <i class="fa fa-trash"></i>
-                        </div>
-                    </div> -->
+                   <!-- Carga Dinamica -->
                 </div>
             </div>
         </div>
     </div>
+    <script src="./src/app/event.js"></script>
     <script src="./src/app/form.js"></script>
     <script src="./src/app/app.js"></script>
 </body>
