@@ -1,9 +1,13 @@
 'use-strict';
-class App {
+class AppTask {
 
     tasksList = [];
 
     createTask() {
+
+    }
+
+    showList() {
 
     }
 
