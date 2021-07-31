@@ -11,5 +11,9 @@
         tasks.removeTask(nodeList);
         inputTask.value = "";
     });
+
+    $.click('btn-click', 'click', function(){
+        alert('Hola Jorge!');
+    });
     
 })(new Events, new AppTask);
