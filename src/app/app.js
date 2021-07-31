@@ -7,9 +7,9 @@
 
     $.click('btn-create', 'click', function() {
         tasks.createTask(inputTask.value);
-        inputTask.value = "";
         tasks.showList(nodeList);
         tasks.removeTask(nodeList);
+        inputTask.value = "";
     });
     
 })(new Events, new AppTask);
