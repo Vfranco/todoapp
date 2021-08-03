@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "605cbbe7-8608-4120-a7c5-ce89cca63ad8"
+    "analytics": "752e9931-a4b1-4d30-8dc7-b75b155312ee"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "listTasks": {
+    "TasksList": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/listTasks",
+            "outputPath": "dist/TasksList",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "listTasks:build:production"
+              "browserTarget": "TasksList:build:production"
             },
             "development": {
-              "browserTarget": "listTasks:build:development"
+              "browserTarget": "TasksList:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "listTasks:build"
+            "browserTarget": "TasksList:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "listTasks"
+  "defaultProject": "TasksList"
 }

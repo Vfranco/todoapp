@@ -21,18 +21,16 @@ export class AppComponent {                                                     
    }
    }//fin addTask
 
-   editTask():void {
+   editTask(indice:number):void {
     console.log("Editar");
+    
+
   }//fin editTask
 
   deleteTask(indice:number):void {
-      console.log(indice);
-      console.log(this.tasksList.splice(indice,1));
-    
-      
+     this.tasksList.splice(indice,1);
+    console.log("Indice de Dato Eliminado"+" "+indice);
+    console.log(this.tasksList);      
   }//fin editTask
 }
 
-
-
- 

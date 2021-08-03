@@ -1,5 +1,5 @@
 {
-  "name": "list-tasks",
+  "name": "tasks-list",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
