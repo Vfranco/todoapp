@@ -1,29 +1,29 @@
 <div class="container">
-    <h1>My App</h1>
-   <div class="form__container">
-     
-           <div class="input">
-               <label>My task</label>
-               <input id="task" type="text" class="input-form"  [(ngModel)]="taskName" required >
-           </div>
-           <div class="input">
-               <button id="btn-create" class="btn btn-success" (click)="addTask()">Guardar Tarea</button>
-           </div>
+   <h1>My App</h1>
+  <div class="form__container">
     
-   </div>
-   <h1>My Tasks</h1>
-   <div class="list__container">
-       <div class="list__container__ul">
-           <div id="resume_tasks" class="list__container__li">
-             <div class="list__container__task" *ngFor="let task of tasksList;let ind=index">
-                 <span>{{task.dato}}</span>
-                 <div class="list__container__call-actions" >
-                     <i class="fa fa-edit" (click)="editTask(ind)" ></i>
-                     <i class="fa fa-trash" (click)="deleteTask(ind)"></i>
-                 </div>
-             </div>
-           </div>
-       </div>
-   </div>
- </div>
+          <div class="input">
+              <label>My task</label>
+              <input id="task" type="text" class="input-form"  [(ngModel)]="taskName" required >
+          </div>
+          <div class="input">
+              <button id="btn-create" class="btn btn-success" (click)="addTask()">{{tituloBoton}}</button>
+          </div>
+   
+  </div>
+  <h1>My Tasks</h1>
+  <div class="list__container">
+      <div class="list__container__ul">
+          <div id="resume_tasks" class="list__container__li">
+            <div class="list__container__task" *ngFor="let task of tasksList;let ind=index">
+                <span>{{task.dato}}</span>
+                <div class="list__container__call-actions">
+                    <i class="fa fa-edit" (click)="editTask(ind,task.dato)"></i>
+                    <i class="fa fa-trash" (click)="deleteTask(ind)"></i>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
 
