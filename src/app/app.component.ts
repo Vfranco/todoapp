@@ -10,29 +10,29 @@ import { task } from './TasksList/interfaces/tareas.interfaces';
 export class AppComponent {
   tasksList: task[] = [];
   taskName: string = '';
-  isEditar: boolean = false;
+  isEdit: boolean = false;
   indice:number=0;
   tituloBoton:string='Guardar Tarea';
   
   addTask(): void {
-    if (!this.isEditar) {
+    if (!this.isEdit) {
       this.tituloBoton='Guardar Tarea';
       if (this.taskName != '') {
             let task: task = {
-          dato: this.taskName,
-        };
+               dato: this.taskName,
+            };
         this.tasksList.push(task);
         this.taskName = '';
       } else {
         console.log('Dato no agregado');
       }
-      this.isEditar=false;
+      this.isEdit=false;
     }else{
       let taskDelete: task = {
-        dato: this.taskName, //dato ingresado por el usuario por defecto espacio en blanco
+        dato: this.taskName, 
       };
        this.tasksList.splice(this.indice, 1, taskDelete);
-       this.isEditar=false;
+       this.isEdit=false;
        this.tituloBoton='Guardar Tarea';
        this.taskName='';
        console.log(this.tasksList);
@@ -40,7 +40,7 @@ export class AppComponent {
   } //fin addTask
 
   editTask(indice: number, nombre: string): void {
-    this.isEditar=true;
+    this.isEdit=true;
     this.tituloBoton='Editar Tarea';
     this.taskName = nombre;
     this.indice=indice;
@@ -49,7 +49,6 @@ export class AppComponent {
 
   deleteTask(indice: number): void {
     this.tasksList.splice(indice, 1);
-    console.log('Indice de Dato Eliminado' + ' ' + indice);
     console.log(this.tasksList);
   } //fin editTask
 
