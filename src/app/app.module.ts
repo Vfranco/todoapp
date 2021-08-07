@@ -8,10 +8,8 @@ import { TasksComponent } from './TasksList/tasks/tasks.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TasksComponent
-  ],
-  exports:[TasksComponent],
-  imports: [
+    ],
+    imports: [
     BrowserModule,FormsModule,
   ],
   providers: [],

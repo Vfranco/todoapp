@@ -10,6 +10,4 @@ export class TasksComponent {
 
   @Input() tasksList:task[] = [];
   
-
- 
 }
